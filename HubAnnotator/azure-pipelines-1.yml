@@ -21,7 +21,23 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- bash: |
- 
- 
-    curl -H "Content-Type: multipart/form-data" -u $jupudisurendra@gmail.com:$Surendra@2107 -F "file=@target/surefire-reports/TEST-com.xpand.java.SwaglabsDemo.xml" "$https://surendra2107.atlassian.net/rest/raven/1.0/import/execution/junit?projectKey=$JA"
+- task: PublishCucumberReport@1
+  inputs:
+    jsonDir: 'target/cucumber-report'
+    outputPath: 'target/cucumber-report'
+    theme: 'bootstrap'
+    reportSuiteAsScenarios: true
+    metadata: 
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**/*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
