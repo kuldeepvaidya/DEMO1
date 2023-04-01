@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "catalogList": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "supplier": {
+              "type": "object",
+              "properties": {
+                "supplierID": {
+                  "type": "string"
+                },
+                "supplierName": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "supplierID",
+                "supplierName",
+                "type"
+              ]
+            },
+            "language": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "properties": {
+                "territory": {
+                  "type": "string"
+                },
+                "timeZone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "territory",
+                "timeZone"
+              ]
+            },
+            "catalog": {
+              "type": "object",
+              "properties": {
+                "catalogID": {
+                  "type": "string"
+                },
+                "catalogVersion": {
+                  "type": "string"
+                },
+                "catalogName": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "limitOnDemand": {
+                  "type": "integer"
+                },
+                "previousVersion": {
+                  "type": "string"
+                },
+                "createDate": {
+                  "type": "string"
+                },
+                "minimumOrderValue": {
+                  "type": "integer"
+                },
+                "agreement": {
+                  "type": "object",
+                  "properties": {
+                    "agreementID": {
+                      "type": "string"
+                    },
+                    "startDate": {
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "type": "string"
+                    },
+                    "endDate": {
+                      "type": "string"
+                    },
+                    "endTime": {
+                      "type": "string"
+                    },
+                    "timezone": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "agreementID",
+                    "startDate",
+                    "startTime",
+                    "endDate",
+                    "endTime",
+                    "timezone"
+                  ]
+                }
+              },
+              "required": [
+                "catalogID",
+                "catalogVersion",
+                "catalogName",
+                "currency",
+                "limitOnDemand",
+                "previousVersion",
+                "createDate",
+                "minimumOrderValue",
+                "agreement"
+              ]
+            },
+            "catalogExtendedInformation": {
+              "type": "object",
+              "properties": {
+                "contactSupplier": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "string"
+                    },
+                    "mail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "phone",
+                    "mail"
+                  ]
+                },
+                "catalogResponsibleBuyer": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "string"
+                    },
+                    "mail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "phone",
+                    "mail"
+                  ]
+                },
+                "deliverycondition": {
+                  "type": "object",
+                  "properties": {
+                    "deliveryCondition": {
+                      "type": "string"
+                    },
+                    "deliveryConditionSAPCode": {
+                      "type": "string"
+                    },
+                    "deliveryConditionDecription": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "deliveryCondition",
+                    "deliveryConditionSAPCode",
+                    "deliveryConditionDecription"
+                  ]
+                },
+                "paycondition": {
+                  "type": "object",
+                  "properties": {
+                    "payCondition": {
+                      "type": "string"
+                    },
+                    "payConditionSAPCode": {
+                      "type": "string"
+                    },
+                    "payConditionDecription": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "payCondition",
+                    "payConditionSAPCode",
+                    "payConditionDecription"
+                  ]
+                },
+                "packingcondition": {
+                  "type": "object",
+                  "properties": {
+                    "packingCondition": {
+                      "type": "string"
+                    },
+                    "packingConditionSAPCode": {
+                      "type": "string"
+                    },
+                    "packingConditionDecription": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "packingCondition",
+                    "packingConditionSAPCode",
+                    "packingConditionDecription"
+                  ]
+                }
+              },
+              "required": [
+                "contactSupplier",
+                "catalogResponsibleBuyer",
+                "deliverycondition",
+                "paycondition",
+                "packingcondition"
+              ]
+            }
+          },
+          "required": [
+            "supplier",
+            "language",
+            "location",
+            "catalog",
+            "catalogExtendedInformation"
+          ]
+        }
+      ]
+    },
+    "totalEntries": {
+      "type": "integer"
+    },
+    "hasMore": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "catalogList",
+    "totalEntries",
+    "hasMore"
+  ]
+}

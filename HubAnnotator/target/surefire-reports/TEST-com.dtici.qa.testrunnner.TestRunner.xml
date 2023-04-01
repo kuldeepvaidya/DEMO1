@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.dtici.qa.testrunnner.TestRunner" time="16.094" tests="14" errors="14" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="webdriver.chrome.driver" value="C:\HubAnnotator\src\test\java\com\dtici\qa\classPackage\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\HubAnnotator\target\test-classes;C:\HubAnnotator\target\classes;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-java\7.10.0\cucumber-java-7.10.0.jar;C:\Users\aauppal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\aauppal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\aauppal\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\gherkin\25.0.2\gherkin-25.0.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\messages\19.1.4\messages-19.1.4.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit5\2.20.0\allure-junit5-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit-platform\2.20.0\allure-junit-platform-2.20.0.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-junit\7.10.0\cucumber-junit-7.10.0.jar;C:\Users\aauppal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\aauppal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-core\7.8.1\cucumber-core-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-gherkin\7.8.1\cucumber-gherkin-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.8.1\cucumber-gherkin-messages-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\datatable\7.8.1\datatable-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-plugin\7.8.1\cucumber-plugin-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\docstring\7.8.1\docstring-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\html-formatter\20.1.0\html-formatter-20.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\aauppal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\aauppal\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\aauppal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\aauppal\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\aauppal\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\aauppal\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\aauppal\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\aauppal\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\aauppal\.m2\repository\net\masterthought\cucumber-reporting\5.7.4\cucumber-reporting-5.7.4.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\aauppal\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\aauppal\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\aauppal\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\aauppal\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\aauppal\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\aauppal\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\aauppal\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\aauppal\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\aauppal\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\aauppal\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\aauppal\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\aauppal\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.1\selenium-java-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.1\selenium-api-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.1\selenium-chrome-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.1\selenium-chromium-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.1\selenium-json-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.1\selenium-devtools-v106-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.1\selenium-devtools-v107-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.1\selenium-devtools-v108-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.1\selenium-devtools-v85-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.1\selenium-edge-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.1\selenium-firefox-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.1\selenium-http-4.7.1.jar;C:\Users\aauppal\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.1\selenium-ie-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.1\selenium-remote-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\aauppal\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\aauppal\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\aauppal\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\aauppal\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\aauppal\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.1\selenium-manager-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.1\selenium-safari-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.1\selenium-support-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\aauppal\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\aauppal\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\aauppal\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\aauppal\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\aauppal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\aauppal\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\aauppal\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\json\json\20090211\json-20090211.jar;C:\Users\aauppal\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\aauppal\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\aauppal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\aauppal\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-testng\7.10.0\cucumber-testng-7.10.0.jar;C:\Users\aauppal\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\aauppal\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\aauppal\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-model-builder\3.8.5\maven-model-builder-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.26\plexus-interpolation-1.26.jar;C:\Users\aauppal\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-model\3.8.5\maven-model-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-artifact\3.8.5\maven-artifact-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-builder-support\3.8.5\maven-builder-support-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\aauppal\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\aauppal\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.20.0\allure-cucumber7-jvm-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-java-commons\2.20.0\allure-java-commons-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-model\2.20.0\allure-model-2.20.0.jar;C:\Users\aauppal\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;C:\Users\aauppal\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\aauppal\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\aauppal\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\aauppal\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-testng\2.20.0\allure-testng-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-test-filter\2.20.0\allure-test-filter-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit4\2.20.0\allure-junit4-2.20.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.3.0\maven-jar-plugin-3.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\file-management\3.1.0\file-management-3.1.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-archiver\3.6.0\maven-archiver-3.6.0.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-io\3.4.0\plexus-io-3.4.0.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-archiver\4.4.0\plexus-archiver-4.4.0.jar;C:\Users\aauppal\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\aauppal\.m2\repository\org\tukaani\xz\1.9\xz-1.9.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongodb-driver-sync\4.8.2\mongodb-driver-sync-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\bson\4.8.2\bson-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongodb-driver-core\4.8.2\mongodb-driver-core-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\bson-record-codec\4.8.2\bson-record-codec-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongo-java-driver\3.12.12\mongo-java-driver-3.12.12.jar;"/>
+    <property name="type" value="button"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="locatorvalue" value="//*[@id=&apos;remove-sauce-labs-backpack&apos;]"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16\bin"/>
+    <property name="sun.java.command" value="C:\Users\aauppal\AppData\Local\Temp\surefire10802087339129408369\surefirebooter4696719248405826522.jar C:\Users\aauppal\AppData\Local\Temp\surefire10802087339129408369 2023-04-01T11-37-42_893-jvmRun1 surefire5300127961880290594tmp surefire_017927722423382268244tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\HubAnnotator\target\test-classes;C:\HubAnnotator\target\classes;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-java\7.10.0\cucumber-java-7.10.0.jar;C:\Users\aauppal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\aauppal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\aauppal\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\gherkin\25.0.2\gherkin-25.0.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\messages\19.1.4\messages-19.1.4.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit5\2.20.0\allure-junit5-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit-platform\2.20.0\allure-junit-platform-2.20.0.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\aauppal\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-junit\7.10.0\cucumber-junit-7.10.0.jar;C:\Users\aauppal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\aauppal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-core\7.8.1\cucumber-core-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-gherkin\7.8.1\cucumber-gherkin-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.8.1\cucumber-gherkin-messages-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\datatable\7.8.1\datatable-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-plugin\7.8.1\cucumber-plugin-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\docstring\7.8.1\docstring-7.8.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\html-formatter\20.1.0\html-formatter-20.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\aauppal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\aauppal\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\aauppal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\aauppal\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\aauppal\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\aauppal\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\aauppal\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\aauppal\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\aauppal\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\aauppal\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\aauppal\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\aauppal\.m2\repository\net\masterthought\cucumber-reporting\5.7.4\cucumber-reporting-5.7.4.jar;C:\Users\aauppal\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\aauppal\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\aauppal\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\aauppal\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\aauppal\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\aauppal\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\aauppal\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\aauppal\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\aauppal\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\aauppal\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\aauppal\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\aauppal\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\aauppal\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.1\selenium-java-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.1\selenium-api-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.1\selenium-chrome-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\aauppal\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.1\selenium-chromium-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.1\selenium-json-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.1\selenium-devtools-v106-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.1\selenium-devtools-v107-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.1\selenium-devtools-v108-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.1\selenium-devtools-v85-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.1\selenium-edge-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.1\selenium-firefox-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.1\selenium-http-4.7.1.jar;C:\Users\aauppal\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.1\selenium-ie-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.1\selenium-remote-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\aauppal\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\aauppal\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\aauppal\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\aauppal\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\aauppal\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\aauppal\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\aauppal\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\aauppal\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.1\selenium-manager-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.1\selenium-safari-driver-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.1\selenium-support-4.7.1.jar;C:\Users\aauppal\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\aauppal\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\aauppal\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\aauppal\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\aauppal\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\aauppal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\aauppal\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\aauppal\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\aauppal\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\aauppal\.m2\repository\org\json\json\20090211\json-20090211.jar;C:\Users\aauppal\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\aauppal\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\aauppal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\aauppal\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\aauppal\.m2\repository\io\cucumber\cucumber-testng\7.10.0\cucumber-testng-7.10.0.jar;C:\Users\aauppal\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\aauppal\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\aauppal\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\aauppal\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\aauppal\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-model-builder\3.8.5\maven-model-builder-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.26\plexus-interpolation-1.26.jar;C:\Users\aauppal\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-model\3.8.5\maven-model-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-artifact\3.8.5\maven-artifact-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-builder-support\3.8.5\maven-builder-support-3.8.5.jar;C:\Users\aauppal\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\aauppal\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\aauppal\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.20.0\allure-cucumber7-jvm-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-java-commons\2.20.0\allure-java-commons-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-model\2.20.0\allure-model-2.20.0.jar;C:\Users\aauppal\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;C:\Users\aauppal\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\aauppal\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\aauppal\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\aauppal\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-testng\2.20.0\allure-testng-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-test-filter\2.20.0\allure-test-filter-2.20.0.jar;C:\Users\aauppal\.m2\repository\io\qameta\allure\allure-junit4\2.20.0\allure-junit4-2.20.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.3.0\maven-jar-plugin-3.3.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\shared\file-management\3.1.0\file-management-3.1.0.jar;C:\Users\aauppal\.m2\repository\org\apache\maven\maven-archiver\3.6.0\maven-archiver-3.6.0.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-io\3.4.0\plexus-io-3.4.0.jar;C:\Users\aauppal\.m2\repository\org\codehaus\plexus\plexus-archiver\4.4.0\plexus-archiver-4.4.0.jar;C:\Users\aauppal\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\aauppal\.m2\repository\org\tukaani\xz\1.9\xz-1.9.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongodb-driver-sync\4.8.2\mongodb-driver-sync-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\bson\4.8.2\bson-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongodb-driver-core\4.8.2\mongodb-driver-core-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\bson-record-codec\4.8.2\bson-record-codec-4.8.2.jar;C:\Users\aauppal\.m2\repository\org\mongodb\mongo-java-driver\3.12.12\mongo-java-driver-3.12.12.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\aauppal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-03-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-16"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\HubAnnotator"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="locator" value="xpath"/>
+    <property name="surefire.real.class.path" value="C:\Users\aauppal\AppData\Local\Temp\surefire10802087339129408369\surefirebooter4696719248405826522.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="16+36-2231"/>
+    <property name="user.name" value="aauppal"/>
+    <property name="path.separator" value=";"/>
+    <property name="testEnv" value="testing"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="CucumberFilePath" value="Cpath"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="key" value="ID_1"/>
+    <property name="localRepository" value="C:\Users\aauppal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\aauppal\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.3.3"/>
+    <property name="java.version" value="16"/>
+    <property name="user.dir" value="C:\HubAnnotator"/>
+    <property name="actvalue" value="6"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\aauppal\apache-maven-3.8.5\bin;C:\Users\aauppal\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="16+36-2231"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="Verify new item is added in to the list" classname="Sprint 1 Execution Set #1" time="4.207">
+    <error type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @App1 @Regression @Smoke @Highpriority @Swag
+Scenario: Verify new item is added in to the list &amp#27;[90m# src/test/resources/features/NewDesign.feature:9&amp#27;[0m
+{
+    "document": {
+        "_id": "6412eb5cbbebfd6a0348eb45",
+        "Key": "SEC_001",
+        "UserID": "standard_user",
+        "password": "secret_sauce"
+    }
+}
+200:io.restassured.internal.RestAssuredResponseImpl@7f0f84d4
+Load Driver Exception The driver executable must exist: C:\DEMO\DEMO_FRM\HubAnnotator\src\test\java\com\dtici\qa\classPackage\chromedriver.exe
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='Login']/Object
+true
+actValue=standard_user
+Reach to Select case 
+key=SCE_001
+Reach to Select case 
+label=user
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='user-name']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=secret_sauce
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=PWD
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='password']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=lblBTN
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='login-button']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+user::;standard_user;SCE_001;xpath;//*[@id='user-name'];textbox
+Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandle()" because "com.dtici.qa.utils.PageElement.driver" is null
+SWITCH+false
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='product']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product2
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-bike-light']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='add-to-cart-sauce-labs-backpack'];button
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='RemoveOneProduct']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='remove-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='remove-sauce-labs-backpack'];button
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Login to application&amp#27;[0m                 &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.user_login_to_application()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mUser is navigated to Swag Labs&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdd product&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mLogout&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify new item is added in to the list and Removed from the list" classname="Sprint 1 Execution Set #1" time="2.965">
+    <error type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Remove Prouct")
+public void remove_prouct() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @App1 @Regression @Smoke @Highpriority @Swag
+Scenario: Verify new item is added in to the list and Removed from the list &amp#27;[90m# src/test/resources/features/NewDesign.feature:17&amp#27;[0m
+{
+    "document": {
+        "_id": "6412eb5cbbebfd6a0348eb45",
+        "Key": "SEC_001",
+        "UserID": "standard_user",
+        "password": "secret_sauce"
+    }
+}
+200:io.restassured.internal.RestAssuredResponseImpl@c14e5a5
+Load Driver Exception The driver executable must exist: C:\DEMO\DEMO_FRM\HubAnnotator\src\test\java\com\dtici\qa\classPackage\chromedriver.exe
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='Login']/Object
+true
+actValue=standard_user
+Reach to Select case 
+key=SCE_001
+Reach to Select case 
+label=user
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='user-name']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=secret_sauce
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=PWD
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='password']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=lblBTN
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='login-button']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+user::;standard_user;SCE_001;xpath;//*[@id='user-name'];textbox
+Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandle()" because "com.dtici.qa.utils.PageElement.driver" is null
+SWITCH+false
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='product']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product2
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-bike-light']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='add-to-cart-sauce-labs-backpack'];button
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='RemoveOneProduct']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='remove-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='remove-sauce-labs-backpack'];button
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Login to application&amp#27;[0m                                           &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.user_login_to_application()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mUser is navigated to Swag Labs&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdd product&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mRemove Prouct&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mLogout&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify new item is added in to the list and Removed from the list and verify Cart" classname="Sprint 1 Execution Set #1" time="2.546">
+    <error type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Remove Prouct")
+public void remove_prouct() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Navigate to Cart")
+public void navigate_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @App1 @Regression @Smoke @Highpriority @Swag
+Scenario: Verify new item is added in to the list and Removed from the list and verify Cart &amp#27;[90m# src/test/resources/features/NewDesign.feature:25&amp#27;[0m
+{
+    "document": {
+        "_id": "6412eb5cbbebfd6a0348eb45",
+        "Key": "SEC_001",
+        "UserID": "standard_user",
+        "password": "secret_sauce"
+    }
+}
+200:io.restassured.internal.RestAssuredResponseImpl@3111631d
+Load Driver Exception The driver executable must exist: C:\DEMO\DEMO_FRM\HubAnnotator\src\test\java\com\dtici\qa\classPackage\chromedriver.exe
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='Login']/Object
+true
+actValue=standard_user
+Reach to Select case 
+key=SCE_001
+Reach to Select case 
+label=user
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='user-name']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=secret_sauce
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=PWD
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='password']
+Reach to Select case 
+type=textbox
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=lblBTN
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='login-button']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+user::;standard_user;SCE_001;xpath;//*[@id='user-name'];textbox
+Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandle()" because "com.dtici.qa.utils.PageElement.driver" is null
+SWITCH+false
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='product']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product2
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='add-to-cart-sauce-labs-bike-light']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='add-to-cart-sauce-labs-backpack'];button
+Read XML parser
+C:\HubAnnotator
+**********************************
+/Browser/Function[@label='RemoveOneProduct']/Object
+true
+actValue=6
+Reach to Select case 
+key=ID_1
+Reach to Select case 
+label=product1
+Reach to Select case 
+locator=xpath
+Reach to Select case 
+locatorValue=//*[@id='remove-sauce-labs-backpack']
+Reach to Select case 
+type=button
+Reach to Select case 
+********************************
+product1::;6;ID_1;xpath;//*[@id='remove-sauce-labs-backpack'];button
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Login to application&amp#27;[0m                                                           &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.user_login_to_application()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mUser is navigated to Swag Labs&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdd product&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mRemove Prouct&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mNavigate to Cart&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mLogout&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="login page" classname="Swaglabs Website" time="2.533">
+    <error type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53190/devtools/browser/f3047e45-93c4-466b-a291-c6d602aeacae
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+]]></error>
+    <system-out><![CDATA[
+@JX-30 @TEST_JX-24 @TESTSET_JX-29
+Scenario Outline: login page                                                  &amp#27;[90m# src/test/resources/features/Saucedemo.feature:14&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mi am an existing user&amp#27;[0m                                                 &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iAmAnExistingUser()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53190/devtools/browser/f3047e45-93c4-466b-a291-c6d602aeacae
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.dtici.qa.classPackage.Login.openBrowser(Login.java:23)
+	at com.dtici.qa.steps.SwagStepDef.iAmAnExistingUser(SwagStepDef.java:29)
+	at âœ½.i am an existing user(file:///C:/HubAnnotator/src/test/resources/features/Saucedemo.feature:7)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mi open browser to &amp#27;[0m&amp#27;[36m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m&amp#27;[36m: www.saucedemo.com&amp#27;[0m      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iOpenBrowserToWwwSaucedemoCom(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mfill correct username as &amp#27;[0m&amp#27;[36m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[36m and password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.fillCorrectUsernameAsAndPasswordAs(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mpress login button&amp#27;[0m                                                      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.pressLoginButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mi see my application dashboard&amp#27;[0m                                         &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iSeeMyApplicationDashboard()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 29193
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 01, 2023 11:37:57 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+]]></system-err>
+  </testcase>
+  <testcase name="Verify Shopping cart" classname="Swaglabs Website" time="0.041">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@JX-30 @TEST_JX-25 @TESTSET_JX-29
+Scenario: Verify Shopping cart                       &amp#27;[90m# src/test/resources/features/Saucedemo.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mCheck all the products&amp#27;[0m                       &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.checkAllTheProducts()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSelect the product that you want to order&amp#27;[0m      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.selectTheProductThatYouWantToOrder()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mClick on Add to cart&amp#27;[0m                          &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.clickOnAddToCart()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addToCart(Login.java:51)
+	at com.dtici.qa.steps.SwagStepDef.clickOnAddToCart(SwagStepDef.java:75)
+	at âœ½.Click on Add to cart(file:///C:/HubAnnotator/src/test/resources/features/Saucedemo.feature:19)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mit will add all your products in shopping cart&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.itWillAddAllYourProductsInShoppingCart()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mClick on shopping cart icon&amp#27;[0m                   &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.clickOnShoppingCartIcon()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Continue Shopping" classname="Swaglabs Website" time="0.036">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@JX-30 @TEST_JX-26 @TESTSET_JX-29
+Scenario: Continue Shopping &amp#27;[90m# src/test/resources/features/Saucedemo.feature:23&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mAdd another item&amp#27;[0m    &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.addAnotherItem()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addNewItem(Login.java:64)
+	at com.dtici.qa.steps.SwagStepDef.addAnotherItem(SwagStepDef.java:116)
+	at âœ½.Add another item(file:///C:/HubAnnotator/src/test/resources/features/Saucedemo.feature:24)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mCheckout the product&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.checkout_the_product()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mremove Item from cart&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.removeItemFromCart()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Finishing order process" classname="Swaglabs Website" time="0.032">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@JX-30 @TEST_JX-27 @TESTSET_JX-29
+Scenario: Finishing order process &amp#27;[90m# src/test/resources/features/Saucedemo.feature:28&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mEnter address information&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.enter_address_information()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addressInfo(Login.java:79)
+	at com.dtici.qa.steps.SwagStepDef.enter_address_information(SwagStepDef.java:125)
+	at âœ½.Enter address information(file:///C:/HubAnnotator/src/test/resources/features/Saucedemo.feature:29)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mClick Finish&amp#27;[0m               &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.click_finish()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Logout from page" classname="Swaglabs Website" time="0.028">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@JX-30 @TEST_JX-28 @TESTSET_JX-29
+Scenario: Logout from page &amp#27;[90m# src/test/resources/features/Saucedemo.feature:32&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mgoto react button&amp#27;[0m  &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.goto_react_button()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.logOut(Login.java:95)
+	at com.dtici.qa.steps.SwagStepDef.goto_react_button(SwagStepDef.java:135)
+	at âœ½.goto react button(file:///C:/HubAnnotator/src/test/resources/features/Saucedemo.feature:33)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mclick logout&amp#27;[0m        &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.click_logout()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClose Browser&amp#27;[0m        &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.closeBrowser()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Update Jira" classname="Swaglabs Website" time="0.026">
+    <error type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'Token is Available' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Token is Available")
+public void token_is_available() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@JX-30
+Scenario: Update Jira      &amp#27;[90m# src/test/resources/features/Saucedemo.feature:36&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mToken is Available&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify Login Functionality" classname="Sprint 1 Execution Set #2" time="1.512">
+    <error type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53204/devtools/browser/f0dbb0c0-82c5-4841-a04c-5e052986094c
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @TEST_DS-1 @TESTSET_DS-7 @App1 @Regression @Smoke
+Scenario Outline: Verify Login Functionality                                  &amp#27;[90m# src/test/resources/features/demo.feature:15&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mi am an existing user&amp#27;[0m                                                 &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iAmAnExistingUser()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53204/devtools/browser/f0dbb0c0-82c5-4841-a04c-5e052986094c
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.dtici.qa.classPackage.Login.openBrowser(Login.java:23)
+	at com.dtici.qa.steps.SwagStepDef.iAmAnExistingUser(SwagStepDef.java:29)
+	at âœ½.i am an existing user(file:///C:/HubAnnotator/src/test/resources/features/demo.feature:7)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mi open browser to &amp#27;[0m&amp#27;[36m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m&amp#27;[36m: www.saucedemo.com&amp#27;[0m      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iOpenBrowserToWwwSaucedemoCom(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mfill correct username as &amp#27;[0m&amp#27;[36m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[36m and password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.fillCorrectUsernameAsAndPasswordAs(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mpress login button&amp#27;[0m                                                      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.pressLoginButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mi see my application dashboard&amp#27;[0m                                         &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.iSeeMyApplicationDashboard()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 37704
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 01, 2023 11:37:59 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+]]></system-err>
+  </testcase>
+  <testcase name="Verify Shopping cart" classname="Sprint 1 Execution Set #2" time="0.025">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @TEST_DS-2 @TESTSET_DS-7 @App1 @Regression
+Scenario: Verify Shopping cart                       &amp#27;[90m# src/test/resources/features/demo.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mCheck all the products&amp#27;[0m                       &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.checkAllTheProducts()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSelect the product that you want to order&amp#27;[0m      &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.selectTheProductThatYouWantToOrder()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mClick on Add to cart&amp#27;[0m                          &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.clickOnAddToCart()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addToCart(Login.java:51)
+	at com.dtici.qa.steps.SwagStepDef.clickOnAddToCart(SwagStepDef.java:75)
+	at âœ½.Click on Add to cart(file:///C:/HubAnnotator/src/test/resources/features/demo.feature:21)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mit will add all your products in shopping cart&amp#27;[0m &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.itWillAddAllYourProductsInShoppingCart()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mClick on shopping cart icon&amp#27;[0m                   &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.clickOnShoppingCartIcon()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify that User is able to buy products" classname="Sprint 1 Execution Set #2" time="0.026">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @TEST_DS-3 @TESTSET_DS-7 @App1 @Purchase @Regresssion @Smoke
+Scenario: Verify that User is able to buy products &amp#27;[90m# src/test/resources/features/demo.feature:26&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mAdd another item&amp#27;[0m                           &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.addAnotherItem()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addNewItem(Login.java:64)
+	at com.dtici.qa.steps.SwagStepDef.addAnotherItem(SwagStepDef.java:116)
+	at âœ½.Add another item(file:///C:/HubAnnotator/src/test/resources/features/demo.feature:27)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mCheckout the product&amp#27;[0m                        &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.checkout_the_product()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mremove Item from cart&amp#27;[0m                        &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.removeItemFromCart()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify Transaction details" classname="Sprint 1 Execution Set #2" time="0.027">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @TEST_DS-4 @TESTSET_DS-7 @App1 @Smoke
+Scenario: Verify Transaction details &amp#27;[90m# src/test/resources/features/demo.feature:32&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mEnter address information&amp#27;[0m    &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.enter_address_information()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.addressInfo(Login.java:79)
+	at com.dtici.qa.steps.SwagStepDef.enter_address_information(SwagStepDef.java:125)
+	at âœ½.Enter address information(file:///C:/HubAnnotator/src/test/resources/features/demo.feature:33)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mClick Finish&amp#27;[0m                  &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.click_finish()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify Session is closed" classname="Sprint 1 Execution Set #2" time="0.024">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+]]></error>
+    <system-out><![CDATA[
+@DS-8 @TEST_DS-5 @TESTSET_DS-7 @App1 @Regression @Smoke
+Scenario: Verify Session is closed &amp#27;[90m# src/test/resources/features/demo.feature:37&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mgoto react button&amp#27;[0m          &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.goto_react_button()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+	at com.dtici.qa.classPackage.Login.logOut(Login.java:95)
+	at com.dtici.qa.steps.SwagStepDef.goto_react_button(SwagStepDef.java:135)
+	at âœ½.goto react button(file:///C:/HubAnnotator/src/test/resources/features/demo.feature:38)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mclick logout&amp#27;[0m                &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.click_logout()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClose Browser&amp#27;[0m                &amp#27;[90m# com.dtici.qa.steps.SwagStepDef.closeBrowser()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

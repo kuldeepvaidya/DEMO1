@@ -1,0 +1,135 @@
+-------------------------------------------------------------------------------
+Test set: com.dtici.qa.testrunnner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 16.094 s <<< FAILURE! - in com.dtici.qa.testrunnner.TestRunner
+Sprint 1 Execution Set #1.Verify new item is added in to the list  Time elapsed: 4.207 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Sprint 1 Execution Set #1.Verify new item is added in to the list and Removed from the list  Time elapsed: 2.965 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Remove Prouct")
+public void remove_prouct() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Sprint 1 Execution Set #1.Verify new item is added in to the list and Removed from the list and verify Cart  Time elapsed: 2.546 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User is navigated to Swag Labs' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User is navigated to Swag Labs")
+public void user_is_navigated_to_swag_labs() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Add product")
+public void add_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Remove Prouct")
+public void remove_prouct() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Navigate to Cart")
+public void navigate_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout")
+public void logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Swaglabs Website.login page  Time elapsed: 2.533 s  <<< ERROR!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53190/devtools/browser/f3047e45-93c4-466b-a291-c6d602aeacae
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+
+Swaglabs Website.Verify Shopping cart  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Swaglabs Website.Continue Shopping  Time elapsed: 0.036 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Swaglabs Website.Finishing order process  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Swaglabs Website.Logout from page  Time elapsed: 0.028 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Swaglabs Website.Update Jira  Time elapsed: 0.026 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Token is Available' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Token is Available")
+public void token_is_available() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Sprint 1 Execution Set #2.Verify Login Functionality  Time elapsed: 1.512 s  <<< ERROR!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53204/devtools/browser/f0dbb0c0-82c5-4841-a04c-5e052986094c
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+
+Sprint 1 Execution Set #2.Verify Shopping cart  Time elapsed: 0.025 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Sprint 1 Execution Set #2.Verify that User is able to buy products  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Sprint 1 Execution Set #2.Verify Transaction details  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+
+Sprint 1 Execution Set #2.Verify Session is closed  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.dtici.qa.classPackage.Login.driver" is null
+

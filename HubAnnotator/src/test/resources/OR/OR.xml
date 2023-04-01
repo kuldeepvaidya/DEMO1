@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Browser>
+
+    <Function label="Login"  title="titleLogin">
+        <Object label="user" type="textbox" locator="xpath" locatorValue="//*[@id='user-name']" actValue="standard_user"  key="SCE_001"> UserID  </Object>
+        <Object label="PWD" type="textbox" locator="xpath" locatorValue="//*[@id='password']" actValue="secret_sauce"  key="ID_1"> Password </Object>
+        <Object label="lblBTN" type="button" locator="xpath" locatorValue="//*[@id='login-button']" actValue="6"  key="ID_1"> SEARCH1  </Object>
+    </Function>
+
+    <Function label="product"  title="product">
+         <Object label="product1" type="button" locator="xpath" locatorValue="//*[@id='add-to-cart-sauce-labs-backpack']" actValue="6"  key="ID_1"> ADD Product 1 </Object>
+        <Object label="product2" type="button" locator="xpath" locatorValue="//*[@id='add-to-cart-sauce-labs-bike-light']" actValue="6"  key="ID_1"> ADD Product  2 </Object>
+    </Function>
+
+    <Function label="RemoveOneProduct"  title="RemoveOneProduct">
+        <Object label="product1" type="button" locator="xpath" locatorValue="//*[@id='remove-sauce-labs-backpack']" actValue="6"  key="ID_1"> ADD Product 1 </Object>
+    </Function>
+
+    <Function label="GotoCart"  title="GotoCart">
+        <Object label="Cart" type="button" locator="xpath" locatorValue="//*[@id='shopping_cart_container']" actValue="6"  key="ID_1"> Add to Cart</Object>
+    </Function>
+
+    <Function label="Logout"  title="Logout">
+        <Object label="Menu" type="button" locator="xpath" locatorValue="//*[@id='react-burger-menu-btn']" actValue="6"  key="ID_1"> Click Drawer</Object>
+        <Object label="Logout" type="button" locator="xpath" locatorValue="//*[@id='logout_sidebar_link']" actValue="6"  key="ID_1">Logout</Object>
+    </Function>
+
+</Browser>

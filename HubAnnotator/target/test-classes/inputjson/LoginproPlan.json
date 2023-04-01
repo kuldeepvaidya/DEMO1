@@ -1,0 +1,10 @@
+{
+  "Scenarios": [
+    {
+      "sc_id": "TC001",
+      "url": "https://dt-proplan-int.cplace.cloud/c01",
+      "loginId": "ABERTON",
+      "Password": "ABERTON"
+    }
+  ]
+}

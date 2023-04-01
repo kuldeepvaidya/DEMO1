@@ -1,0 +1,851 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "return": {
+      "type": "object",
+      "properties": {
+        "buyers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "buyerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "ooek": {
+                  "type": "string"
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "surename": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "buyerPlants",
+                "cdUserId",
+                "department",
+                "name",
+                "ooek",
+                "prio",
+                "searchStepName",
+                "surename"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "buyerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "ooek": {
+                  "type": "string"
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "surename": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "buyerPlants",
+                "cdUserId",
+                "department",
+                "name",
+                "ooek",
+                "prio",
+                "searchStepName",
+                "surename"
+              ]
+            }
+          ]
+        },
+        "documents": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "addressIndex": {
+                  "type": "string"
+                },
+                "ap": {
+                  "type": "integer"
+                },
+                "cdUserId": {
+                  "type": "string"
+                },
+                "commodity": {
+                  "type": "string"
+                },
+                "consumerPlants": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "number"
+                  ]
+                },
+                "documentNumber": {
+                  "type": "string"
+                },
+                "documentType": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "object",
+                  "properties": {
+                    "es1": {
+                      "type": "string"
+                    },
+                    "es2": {
+                      "type": "string"
+                    },
+                    "snr": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "integer"
+                    },
+                    "commodity": {
+                      "type": "string"
+                    },
+                    "partDescriptions": {
+                      "type": "object",
+                      "properties": {
+                        "english": {
+                          "type": "string"
+                        },
+                        "german": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "english",
+                        "german"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "es1",
+                    "es2",
+                    "snr",
+                    "type",
+                    "commodity",
+                    "partDescriptions"
+                  ]
+                },
+                "prio": {
+                  "type": "integer"
+                },
+                "searchStepName": {
+                  "type": "string"
+                },
+                "supplierNumber": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "addressIndex",
+                "ap",
+                "cdUserId",
+                "commodity",
+                "consumerPlants",
+                "documentNumber",
+                "documentType",
+                "part",
+                "prio",
+                "searchStepName",
+                "supplierNumber"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "buyers",
+        "documents"
+      ]
+    }
+  },
+  "required": [
+    "return"
+  ]
+}

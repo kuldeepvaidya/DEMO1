@@ -1,0 +1,14 @@
+{
+  "Scenarios": [
+    {
+      "sc_id": "TC001",
+      "applicationName": "CERTUS",
+      "applicationURL": "https://certus-test.daimlertruck.com/certuscc/#/dashboard",
+      "userID": "AROBREC",
+      "password": "AROBREC",
+      "partNumber": "A4256700880",
+      "documentTitle": "Testing01",
+      "documentName": "Test01.pdf"
+    }
+  ]
+}

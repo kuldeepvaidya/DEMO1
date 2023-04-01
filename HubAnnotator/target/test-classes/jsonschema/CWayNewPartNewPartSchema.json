@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "stockmaterial": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "buyerId": {
+          "type": "string"
+        },
+        "supplierID": {
+          "type": "string"
+        },
+        "supplierAID": {
+          "type": "string"
+        },
+        "returnCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "description",
+        "buyerId",
+        "supplierID",
+        "supplierAID",
+        "returnCode"
+      ]
+    }
+  },
+  "required": [
+    "stockmaterial"
+  ]
+}

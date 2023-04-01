@@ -1,0 +1,7 @@
+<Browser>
+  <!--Zero or more repetitions:-->
+  <Function label="string" title="string">
+    <!--Zero or more repetitions:-->
+    <Object label="string" type="string" locator="string" locatorValue="string" actValue="string" key="string">string</Object>
+  </Function>
+</Browser>

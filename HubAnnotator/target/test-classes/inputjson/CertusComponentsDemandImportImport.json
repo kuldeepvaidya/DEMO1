@@ -1,0 +1,16 @@
+{
+  "certResponsible": "JROEPER",
+  "supplierNumber": 12711206,
+  "supplierIndex": "A",
+  "partNumber": "A4108311146",
+  "partNameEn": null,
+  "partNameDe": "LU TKANAL / F GEPAECKABLAGENWAND",
+  "certTopic": "BRENNBARKEIT",
+  "market": "EU/ECE",
+  "certType": "BUS0146",
+  "demandSource": "BUS",
+  "deadline": "2019-07-21T17:32:28Z",
+  "comment": null,
+  "specialRequest": false,
+  "deactivate": false
+}

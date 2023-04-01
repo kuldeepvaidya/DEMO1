@@ -1,0 +1,157 @@
+{
+  "newpart": {
+    "orderNumber": "string",
+    "requestStatus": "INSERT",
+    "orderRequisitionNumber": 0,
+    "purchaseRequisitionNumber": "string",
+    "creation": {
+      "creationDate": "string",
+      "creationTime": "string",
+      "timezone": "string"
+    },
+    "supplier": {
+      "supplierID": "string",
+      "supplierName": "string",
+      "type": "buyer_specific"
+    },
+    "buyer": {
+      "buyerID": "string",
+      "name": "string",
+      "phone": "string",
+      "mail": "string"
+    },
+    "language": "deu",
+    "location": {
+      "territory": "string",
+      "timeZone": "string"
+    },
+    "catalog": {
+      "catalogID": "string",
+      "catalogVersion": "strings",
+      "catalogName": "string",
+      "agreement": {
+        "agreementID": "string",
+        "startDate": "string",
+        "startTime": "string",
+        "endDate": "string",
+        "endTime": "string",
+        "timezone": "string"
+      }
+    },
+    "article": {
+      "supplierAID": "string",
+      "shortDescription": "string",
+      "longDescription": "string",
+      "deliveryTime": 0,
+      "plantAIDs": [
+        {
+          "plantAID": "string",
+          "plant": "stri"
+        }
+      ],
+      "ean": "string",
+      "eClass": {
+        "eClassCode": "string",
+        "eClassCodeType": "string"
+      },
+      "manufacturer": {
+        "manufacturerAID": "string",
+        "name": "string",
+        "descriptions": "string"
+      },
+      "specialTreatmentClasses": [
+        {
+          "type": "string",
+          "class": "string"
+        }
+      ],
+      "keywords": [
+        {
+          "keyword": "string"
+        }
+      ],
+      "articleFeatures": [
+        {
+          "referenceFeatureSystemName": "string",
+          "referenceFeatureGroupId": "string",
+          "referenceFeatureGroupName": "string",
+          "feature": [
+            {
+              "fname": "string",
+              "variants": [
+                {
+                  "variant": [
+                    {
+                      "fvalue": "string",
+                      "supplierAidSupplement": "string"
+                    }
+                  ],
+                  "vorder": 0
+                }
+              ],
+              "fvalue": [
+                "string"
+              ],
+              "funit": "string",
+              "forder": 0,
+              "fdescr": "string",
+              "fvalueDetails": "string"
+            }
+          ]
+        }
+      ],
+      "articlePriceDetails": {
+        "startDate": "string",
+        "startTime": "string",
+        "endDate": "string",
+        "endTime": "string",
+        "timezone": "string",
+        "dailyPrice": false,
+        "taxField": "st",
+        "price": [
+          {
+            "priceType": "string",
+            "priceAmount": 0,
+            "lowerBound": 0,
+            "priceFactor": 0
+          }
+        ]
+      },
+      "mimeinfo": [
+        {
+          "mimeType": "url",
+          "mimeSource": "string",
+          "mimeDescr": "string",
+          "mimeAlt": "string",
+          "mimePurpose": "stri",
+          "mimeOrder": 0
+        }
+      ],
+      "articleReference": [
+        {
+          "type": "sparepart",
+          "quantity": 0,
+          "artIdTo": "string",
+          "catalogId": "string",
+          "catalogVersion": "string"
+        }
+      ],
+      "articleToCataloggroupMap": [
+        {
+          "artId": "string",
+          "catalogGroupId": "string",
+          "articleToCataloggroupMapOrder": 0,
+          "mode": "new"
+        }
+      ]
+    },
+    "articleOrderDetails": {
+      "orderUnit": "str",
+      "contentUnit": "str",
+      "noContentUnitPerOrderUnit": 0,
+      "priceQuantity": 0,
+      "quantityMin": 0,
+      "quantityInterval": 0
+    }
+  }
+}

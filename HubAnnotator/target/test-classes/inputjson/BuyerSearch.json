@@ -1,0 +1,9 @@
+{
+  "searchRequest": {
+    "onlineId": "GENERALTRUCK",
+    "consumingPlant": "1521",
+    "part": {
+      "snr": "A0001402039"
+    }
+  }
+}

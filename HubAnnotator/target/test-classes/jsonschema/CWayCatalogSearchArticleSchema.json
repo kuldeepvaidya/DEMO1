@@ -1,0 +1,596 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "articleList": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "supplier": {
+              "type": "object",
+              "properties": {
+                "supplierID": {
+                  "type": "string"
+                },
+                "supplierName": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "supplierID",
+                "supplierName",
+                "type"
+              ]
+            },
+            "buyer": {
+              "type": "object",
+              "properties": {
+                "buyerID": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "mail": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "buyerID",
+                "name",
+                "phone",
+                "mail"
+              ]
+            },
+            "language": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "properties": {
+                "territory": {
+                  "type": "string"
+                },
+                "timeZone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "territory",
+                "timeZone"
+              ]
+            },
+            "catalog": {
+              "type": "object",
+              "properties": {
+                "catalogID": {
+                  "type": "string"
+                },
+                "catalogVersion": {
+                  "type": "string"
+                },
+                "catalogName": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "limitOnDemand": {
+                  "type": "integer"
+                },
+                "previousVersion": {
+                  "type": "string"
+                },
+                "createDate": {
+                  "type": "string"
+                },
+                "minimumOrderValue": {
+                  "type": "integer"
+                },
+                "agreement": {
+                  "type": "object",
+                  "properties": {
+                    "agreementID": {
+                      "type": "string"
+                    },
+                    "startDate": {
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "type": "string"
+                    },
+                    "endDate": {
+                      "type": "string"
+                    },
+                    "endTime": {
+                      "type": "string"
+                    },
+                    "timezone": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "agreementID",
+                    "startDate",
+                    "startTime",
+                    "endDate",
+                    "endTime",
+                    "timezone"
+                  ]
+                }
+              },
+              "required": [
+                "catalogID",
+                "catalogVersion",
+                "catalogName",
+                "currency",
+                "limitOnDemand",
+                "previousVersion",
+                "createDate",
+                "minimumOrderValue",
+                "agreement"
+              ]
+            },
+            "article": {
+              "type": "object",
+              "properties": {
+                "supplierAID": {
+                  "type": "string"
+                },
+                "shortDescription": {
+                  "type": "string"
+                },
+                "longDescription": {
+                  "type": "string"
+                },
+                "deliveryTime": {
+                  "type": "integer"
+                },
+                "plantAIDs": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "plantAID": {
+                          "type": "string"
+                        },
+                        "plant": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "plantAID",
+                        "plant"
+                      ]
+                    }
+                  ]
+                },
+                "ean": {
+                  "type": "string"
+                },
+                "eClass": {
+                  "type": "object",
+                  "properties": {
+                    "eClassCode": {
+                      "type": "string"
+                    },
+                    "eClassCodeType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "eClassCode",
+                    "eClassCodeType"
+                  ]
+                },
+                "manufacturer": {
+                  "type": "object",
+                  "properties": {
+                    "manufacturerAID": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "descriptions": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "manufacturerAID",
+                    "name",
+                    "descriptions"
+                  ]
+                },
+                "specialTreatmentClasses": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "class": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "class"
+                      ]
+                    }
+                  ]
+                },
+                "articleFeatures": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "referenceFeatureSystemName": {
+                          "type": "string"
+                        },
+                        "referenceFeatureGroupId": {
+                          "type": "string"
+                        },
+                        "referenceFeatureGroupName": {
+                          "type": "string"
+                        },
+                        "feature": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "fname": {
+                                  "type": "string"
+                                },
+                                "variants": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "variant": {
+                                          "type": "array",
+                                          "items": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "fvalue": {
+                                                  "type": "string"
+                                                },
+                                                "supplierAidSupplement": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "fvalue",
+                                                "supplierAidSupplement"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "vorder": {
+                                          "type": "integer"
+                                        }
+                                      },
+                                      "required": [
+                                        "variant",
+                                        "vorder"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "fvalue": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                "funit": {
+                                  "type": "string"
+                                },
+                                "forder": {
+                                  "type": "integer"
+                                },
+                                "fdescr": {
+                                  "type": "string"
+                                },
+                                "fvalueDetails": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "fname",
+                                "variants",
+                                "fvalue",
+                                "funit",
+                                "forder",
+                                "fdescr",
+                                "fvalueDetails"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "referenceFeatureSystemName",
+                        "referenceFeatureGroupId",
+                        "referenceFeatureGroupName",
+                        "feature"
+                      ]
+                    }
+                  ]
+                },
+                "articlePriceDetails": {
+                  "type": "object",
+                  "properties": {
+                    "startDate": {
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "type": "string"
+                    },
+                    "endDate": {
+                      "type": "string"
+                    },
+                    "endTime": {
+                      "type": "string"
+                    },
+                    "timezone": {
+                      "type": "string"
+                    },
+                    "dailyPrice": {
+                      "type": "boolean"
+                    },
+                    "taxField": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "priceType": {
+                              "type": "string"
+                            },
+                            "priceAmount": {
+                              "type": "integer"
+                            },
+                            "lowerBound": {
+                              "type": "integer"
+                            },
+                            "match": {
+                              "type": "boolean"
+                            },
+                            "priceFactor": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "priceType",
+                            "priceAmount",
+                            "lowerBound",
+                            "match",
+                            "priceFactor"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "startDate",
+                    "startTime",
+                    "endDate",
+                    "endTime",
+                    "timezone",
+                    "dailyPrice",
+                    "taxField",
+                    "price"
+                  ]
+                }
+              },
+              "required": [
+                "supplierAID",
+                "shortDescription",
+                "longDescription",
+                "deliveryTime",
+                "plantAIDs",
+                "ean",
+                "eClass",
+                "manufacturer",
+                "specialTreatmentClasses",
+                "articleFeatures",
+                "articlePriceDetails"
+              ]
+            },
+            "amount": {
+              "type": "integer"
+            },
+            "articleOrderDetails": {
+              "type": "object",
+              "properties": {
+                "orderUnit": {
+                  "type": "string"
+                },
+                "contentUnit": {
+                  "type": "string"
+                },
+                "noContentUnitPerOrderUnit": {
+                  "type": "integer"
+                },
+                "priceQuantity": {
+                  "type": "integer"
+                },
+                "quantityMin": {
+                  "type": "integer"
+                },
+                "quantityInterval": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "orderUnit",
+                "contentUnit",
+                "noContentUnitPerOrderUnit",
+                "priceQuantity",
+                "quantityMin",
+                "quantityInterval"
+              ]
+            },
+            "mimeinfo": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mimeType": {
+                      "type": "string"
+                    },
+                    "mimeSource": {
+                      "type": "string"
+                    },
+                    "mimeDescr": {
+                      "type": "string"
+                    },
+                    "mimeAlt": {
+                      "type": "string"
+                    },
+                    "mimePurpose": {
+                      "type": "string"
+                    },
+                    "mimeOrder": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "mimeType",
+                    "mimeSource",
+                    "mimeDescr",
+                    "mimeAlt",
+                    "mimePurpose",
+                    "mimeOrder"
+                  ]
+                }
+              ]
+            },
+            "articleReference": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "artIdTo": {
+                      "type": "string"
+                    },
+                    "catalogId": {
+                      "type": "string"
+                    },
+                    "catalogVersion": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "quantity",
+                    "artIdTo",
+                    "catalogId",
+                    "catalogVersion"
+                  ]
+                }
+              ]
+            },
+            "articleToCataloggroupMap": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "artId": {
+                      "type": "string"
+                    },
+                    "catalogGroupId": {
+                      "type": "string"
+                    },
+                    "articleToCataloggroupMapOrder": {
+                      "type": "integer"
+                    },
+                    "mode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artId",
+                    "catalogGroupId",
+                    "articleToCataloggroupMapOrder",
+                    "mode"
+                  ]
+                }
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "text"
+              ]
+            }
+          },
+          "required": [
+            "supplier",
+            "buyer",
+            "language",
+            "location",
+            "catalog",
+            "article",
+            "amount",
+            "articleOrderDetails",
+            "mimeinfo",
+            "articleReference",
+            "articleToCataloggroupMap",
+            "response"
+          ]
+        }
+      ]
+    },
+    "totalEntries": {
+      "type": "integer"
+    },
+    "hasMore": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "articleList",
+    "totalEntries",
+    "hasMore"
+  ]
+}
